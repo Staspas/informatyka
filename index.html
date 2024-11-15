@@ -1,56 +1,102 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>ESP IOT DASHBOARD</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- <link rel="icon" type="image/png" href="favicon.png"> -->
-        <link rel="stylesheet" type="text/css" href="style.css">
-    </head>
-    <body>
-        <!-- <div class="topnav">
-            <h1>BATTERY READINGS</h1>
-        </div> -->        
-        <div class="content">
-            <p class="card-title"><span id="uptime">Uptime --</span> </p>
-            <!-- <p class="reading"><span id="uptime"></span> </p>
-            <p class="reading"><span id="uptime"></span> </p> -->
-            <div class="card-grid">
-                <div class="card">
-                    <p class="card-title"> Voltage</p>
-                    <p class="reading">
-                        <span id="batt_volts">0.000</span> <span class="unit">V</span>
-                    </p>
-                </div>
-                <div class="card">
-                    <p class="card-title"> Current</p>
-                    <p class="reading">
-                        <span id="batt_current">0.000</span> <span class="unit">A</span>
-                    </p>
-                </div>
-                <div class="card">
-                    <p class="card-title"> Power</p>
-                    <p class="reading"><span id="batt_power">0.000</span> <span class="unit">W</span></p>
-                </div>
-            </div>
-            <div class="card-grid">
-                <!-- <div class="card">
-                    <p class="card-title"> DC Source current</p>
-                    <p class="reading"><span id="src_current"> <span class="unit">W</span></p>
-                </div>
-                <div class="card">
-                    <p class="card-title"> Solar Source current</p>
-                    <p class="reading"><span id="aux_current"> <span class="unit">W</span></p>
-                </div>
-                <div class="card">
-                    <p class="card-title"> Load current</p>
-                    <p class="reading"><span id="load_current"> <span class="unit">W</span></p>
-                </div> -->
-            </div>
-            <p class="card-title">History <span id="history_size"></span></p>
-            <div class="card-grid">
-                <div class="history" id="history"></div>
-            </div>            
-        </div>
-        <script src="script.js"></script>
-    </body>
-</html>
+<head>
+  <link rel="icon" href="obrazk/icon2.png">
+<style>
+  
+body {
+  background-color: #242424;
+  background-image: url("obrazk/blah.jpg");
+  background-repeat: no-repeat;
+  background-size: 100.1%;
+}
+div {
+  border-radius: 20px;
+}
+
+.grid-container {
+  display: grid;
+  grid: 150px / auto auto auto;
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.link {
+  background-color: #2e3e6e;
+  text-align: center;
+  padding: 10px;
+  font-size: 40px;
+  margin: auto;
+  border-radius: 10px;  
+  text-decoration: none;  
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: 5px 5px 5px black;
+  width: 212px;
+}
+
+.link:hover {
+  background-color: #222f53;
+}
+
+div {
+	display: flex;
+	width: 100%;
+	padding: 5px;
+	align-content: center;
+  
+}
+.link:visited{
+  color: #000;
+}
+.link:link{
+  color:#000;
+}
+.topspace{
+  height: 100px ;
+}
+.pog{
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100px;
+  background-color: #401957;
+  border:5px;
+  border-color: #000;
+  border-style: solid;
+  border-radius: 20px;
+  margin: auto;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+</style>
+</head>
+<body>
+  
+
+  <div class="topspace">
+  </div>
+ 
+  <div>
+  
+    <h1 class="pog">PORADNIK GÓRSKI</h1>
+  
+  </div>
+  
+  <div class="topspace">
+  </div>
+  
+  <div>
+	<a href="pod1.html" class="link">Jak w góry</a>
+  <a href="pod2.html" class="link">Pogoda</a>
+  <a href="pod3.html" class="link">Mapa</a>
+</div>
+</body>
