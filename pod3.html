@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<head>
+  <link rel="icon" href="obrazk/icon2.png">
+</head>
+<body>
+
+
+
+</body>
+
+<style>
+body {
+  background-color: #242424;
+  background-image: url("obrazk/blah.jpg");
+  background-repeat: no-repeat;
+  background-size: 100.1%;
+}
+
+.link {
+  background-color: #2e3e6e;
+  text-align: center;
+  padding: 10px;
+  font-size: 2rem;
+  margin: auto;
+  border-radius: 10px;  
+  text-decoration: none;  
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: 5px 5px 5px black;
+  width: max-content;
+}
+
+.link:hover {
+  background-color: #222f53;
+}
+
+div {
+	display: flex;
+	width: 100%;
+	padding: 5px;
+	align-content: center;
+    text-align: center;
+  
+}
+.link:visited{
+  color: #000;
+}
+.link:link{
+  color:#000;
+}
+.topspace{
+  height: 100px ;
+}
+.pog{
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100px;
+  background-color: #401957;
+  border:5px;
+  border-color: #000;
+  border-style: solid;
+  border-radius: 40px;
+  margin: auto;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+
+
+</style>
+<script> 
+
+    function zmiana_mapy_piecs()    
+    {
+        document.getElementById("mapa").src = "https://www.openstreetmap.org/export/embed.html?bbox=20.02766847610474%2C49.20471481867008%2C20.069725513458256%2C49.22227819262736&amp;layer=cyclemap&amp;marker=49.213497285676965%2C20.048696994781494";
+        
+    }
+    function zmiana_mapy_moko()    
+    {
+        document.getElementById("mapa").src = "https://www.openstreetmap.org/export/embed.html?bbox=20.06556272506714%2C49.199131218315934%2C20.07607698440552%2C49.20352314269885&amp;layer=cyclemap&amp;marker=49.20132722926222%2C20.070819854736328";
+    }
+    function zmiana_mapy_kaspr()    
+    {
+        document.getElementById("mapa").src = "https://www.openstreetmap.org/export/embed.html?bbox=19.970473051071167%2C49.22848625632967%2C19.995256662368778%2C49.23726450026691&amp;layer=cyclemap&amp;marker=49.23287557328575%2C19.98286485671997";
+    }
+    function zmiana_mapy_halag()    
+    {
+        document.getElementById("mapa").src="https://www.openstreetmap.org/export/embed.html?bbox=20.00024020671845%2C49.24280527007231%2C20.012632012367252%2C49.247193314740755&amp;layer=cyclemap&amp;marker=49.244999341150326%2C20.006436109542847";
+    } ;
+</script>
+<div style="width: 95vw; height: 75vh; margin: auto;">
+     <iframe id="mapa" width="100%" height="100%" src="https://www.openstreetmap.org/export/embed.html?bbox=20.014514923095707%2C49.17612069641509%2C20.098628997802734%2C49.21126151433474&amp;layer=cyclemap"></iframe>
+</div>
+<div class = "link"; onclick="zmiana_mapy_piecs()">Pięć stawów Polskich</div>
+<div class="topspace2">
+
+</div>
+<div class = "link"; onclick="zmiana_mapy_moko()">Morskie Oko</div>
+<div class="topspace2">
+
+</div>
+<div class = "link"; onclick="zmiana_mapy_kaspr()">Kasprowy Wierch</div>
+<div class="topspace2">
+
+</div>
+<div class = "link"; onclick="zmiana_mapy_halag()">Hala Gąsienicowa</div>
+<div class="topspace">
+
+</div>
+
+<div>
+<a href="str.html" class="link">powrót</a>
+</div>

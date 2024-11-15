@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ESP IOT DASHBOARD</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- <link rel="icon" type="image/png" href="favicon.png"> -->
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <!-- <div class="topnav">
+            <h1>BATTERY READINGS</h1>
+        </div> -->        
+        <div class="content">
+            <p class="card-title"><span id="uptime">Uptime --</span> </p>
+            <!-- <p class="reading"><span id="uptime"></span> </p>
+            <p class="reading"><span id="uptime"></span> </p> -->
+            <div class="card-grid">
+                <div class="card">
+                    <p class="card-title"> Voltage</p>
+                    <p class="reading">
+                        <span id="batt_volts">0.000</span> <span class="unit">V</span>
+                    </p>
+                </div>
+                <div class="card">
+                    <p class="card-title"> Current</p>
+                    <p class="reading">
+                        <span id="batt_current">0.000</span> <span class="unit">A</span>
+                    </p>
+                </div>
+                <div class="card">
+                    <p class="card-title"> Power</p>
+                    <p class="reading"><span id="batt_power">0.000</span> <span class="unit">W</span></p>
+                </div>
+            </div>
+            <div class="card-grid">
+                <!-- <div class="card">
+                    <p class="card-title"> DC Source current</p>
+                    <p class="reading"><span id="src_current"> <span class="unit">W</span></p>
+                </div>
+                <div class="card">
+                    <p class="card-title"> Solar Source current</p>
+                    <p class="reading"><span id="aux_current"> <span class="unit">W</span></p>
+                </div>
+                <div class="card">
+                    <p class="card-title"> Load current</p>
+                    <p class="reading"><span id="load_current"> <span class="unit">W</span></p>
+                </div> -->
+            </div>
+            <p class="card-title">History <span id="history_size"></span></p>
+            <div class="card-grid">
+                <div class="history" id="history"></div>
+            </div>            
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
