@@ -141,7 +141,6 @@
       load_data("moko", "https://api-gory.imgw.pl/pages/pages?name=morskie_oko");
       load_data("kaspr", "https://api-gory.imgw.pl/pages/pages?name=kasprowy_wierch");
       load_data("halag", "https://api-gory.imgw.pl/pages/pages?name=hala_gasienicowa");
-
     }
 
     function update_data(miejsce, json_data, error = null) {
@@ -163,7 +162,7 @@
         var forecast_data_0 = json_data['townForecast']['data'][0];
 
         var data_wart = Date(forecast_data_0['date']);
-        data.innerHTML = data_wart;
+        data.innerHTML = data_wart.toLocaleString();
 
         if (temp) {
           temp.innerHTML = (forecast_data_0['temperature'] - 273.15).toFixed(1) + "°C";
